@@ -1,0 +1,24 @@
+
+PROGRAM:
+
+file_object = open("my_data.txt", "a")
+
+print("Enter lines to append to the file. Type 'exit' to stop.")
+
+while True:
+    line = input("Enter line to append: ")
+    if line.lower() == 'exit':
+        break
+    file_object.write(line + "\n")
+
+# Close the file.
+file_object.close()
+print("Data appended to 'my_data.txt' successfully.")
+
+OUTPUT:
+Enter lines to append to the file. Type 'exit' to stop.
+Enter line to append: Hello world
+Enter line to append: Python programming
+Enter line to append: This is a new line
+Enter line to append: exit
+Data appended to 'my_data.txt' successfully.
