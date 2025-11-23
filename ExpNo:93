@@ -1,0 +1,16 @@
+PROGRAM:
+
+try: 
+file = open(“example.txt”, “r”) 
+# Code to read from the file 
+except FileNotFoundError: 
+print(“File not found!”) 
+Else :  
+file = open(“example.txt”, “r”) 
+print(f.read()) 
+finally: 
+file.close()
+
+OUTPUT:
+SyntaxError: invalid syntax
+
