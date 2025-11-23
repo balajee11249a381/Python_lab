@@ -1,0 +1,18 @@
+Program:  
+
+a = int(input("Enter a : "))  
+b = int(input("Enter b : "))  
+c = int(input("Enter c : "))  
+if a>b and a>c:  
+print(a,” is bigger from given numbers")  
+elif b>c and b>a:  
+print(b.” is bigger from given numbers")  
+else :  
+print(c,” is bigger from given numbers")   
+
+
+Output:  
+Enter a : 10  
+Enter b : 20  
+Enter c : 30  
+30 is bigger from given numbers 
