@@ -1,0 +1,11 @@
+def main():
+    obj1 = open("Demo1.txt", "w")
+    for x in range(1, 20):
+        obj1.write(x)  
+    obj1.close()
+
+main()
+
+OUTPUT:
+
+TypeError: must be str, not int
