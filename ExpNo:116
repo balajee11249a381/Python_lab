@@ -1,0 +1,13 @@
+import shelve
+
+with shelve.open('my_data.db', 'c') as shelf:
+    shelf['name'] = 'Alice'
+    shelf['age'] = 30
+    shelf['favorite_numbers'] = [7, 13, 42]
+    shelf['is_student'] = False
+
+    print("Data stored in 'my_data.db'.")
+
+OUTPUT:
+Data stored in 'my_data.db'.
+
