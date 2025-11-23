@@ -1,0 +1,27 @@
+Program: 
+
+marks = int(input("Enter your marks out of 100: ")) 
+if marks >= 90: 
+grade = "A+" 
+elif marks >= 75: 
+grade = "A" 
+12 
+elif marks >= 60: 
+grade = "B" 
+elif marks >= 50: 
+grade = "C" 
+elif marks >= 35: 
+grade = "D" 
+else: 
+grade = "Fail" 
+print("Your grade is:", grade) 
+
+
+Output: 
+Enter your marks out of 100: 92 
+Your grade is: A+ 
+
+Result: 
+Thus, the Python program was executed successfully and the student’s 
+grade was displayed correctly based on the entered marks. 
+13
