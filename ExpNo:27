@@ -1,0 +1,16 @@
+PROGRAM:
+
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+if a > b:
+    print(b, a)
+else:
+    print(a, b)
+
+OUTPUT:
+
+Enter first number: 40
+Enter second number: 10
+10.0 40.0
+
