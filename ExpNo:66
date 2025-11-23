@@ -1,19 +1,21 @@
-Program
-Total budget = 10000
-Marketing Ratio = 3
-Development Ratio = 5
-Operations Ratio = 2
 
-Total Ratio = 3 + 5 + 2 = 10
 
-Calculation:
+total_budget = 10000
+m_ratio = 3
+d_ratio = 5
+o_ratio = 2
 
-Marketing = (3/10) × 10000 = 3000
-Development = (5/10) × 10000 = 5000
-Operations = (2/10) × 10000 = 2000
+total_ratio = m_ratio + d_ratio + o_ratio
 
-Expected Output:
+marketing_budget = (m_ratio / total_ratio) * total_budget
+development_budget = (d_ratio / total_ratio) * total_budget
+operations_budget = (o_ratio / total_ratio) * total_budget
 
+print("Marketing budget:", format(marketing_budget, ".2f"))
+print("Development budget:", format(development_budget, ".2f"))
+print("Operations budget:", format(operations_budget, ".2f"))
+
+output:
 Marketing budget: 3000.00
 Development budget: 5000.00
 Operations budget: 2000.00
