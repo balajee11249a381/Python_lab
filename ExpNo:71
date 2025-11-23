@@ -1,0 +1,22 @@
+ PROGRAM:
+
+num = input("Enter a number: ")
+
+# Check palindrome
+if num == num[::-1]:
+    print(num, "is a palindrome")
+else:
+    print(num, "is not a palindrome")
+
+# Count occurrences of each digit
+print("\nDigit Occurrence Count:")
+for digit in sorted(set(num)):     # unique digits sorted
+    print(f"{digit} occurs {num.count(digit)} times")
+
+OUTPUT;
+Enter a number: 1221
+1221 is a palindrome
+
+Digit Occurrence Count:
+1 occurs 2 times
+2 occurs 2 times
