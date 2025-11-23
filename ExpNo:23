@@ -1,0 +1,13 @@
+PROGRAM:
+
+days = int(input("Enter number of days: "))
+
+hours = days * 24
+minutes = hours * 60
+seconds = minutes * 60
+
+print(f"{days} days = {hours} hours, {minutes} minutes, {seconds} seconds"
+
+Output:
+Enter number of days: 2
+2 days = 48 hours, 2880 minutes, 172800 seconds
