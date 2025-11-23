@@ -1,0 +1,16 @@
+PROGRAM
+
+temperatures = [32, 34, 29, 31, 28, 33, 35, 36, 30, 28, 31, 32, 34, 35, 29, 30]
+
+avg_temp = sum(temperatures) / len(temperatures)
+days_above_avg = sum(1 for t in temperatures if t > avg_temp)
+temp_difference = max(temperatures) - min(temperatures)
+
+print("Average Temperature =", avg_temp)
+print("Days Above Average =", days_above_avg)
+print("Temp Difference =", temp_difference)
+
+OUTPUT:
+Average Temperature = 31.5
+Days Above Average = 8
+Temp Difference = 8
