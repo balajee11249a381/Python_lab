@@ -1,0 +1,19 @@
+Program
+Total budget = 10000
+Marketing Ratio = 3
+Development Ratio = 5
+Operations Ratio = 2
+
+Total Ratio = 3 + 5 + 2 = 10
+
+Calculation:
+
+Marketing = (3/10) × 10000 = 3000
+Development = (5/10) × 10000 = 5000
+Operations = (2/10) × 10000 = 2000
+
+Expected Output:
+
+Marketing budget: 3000.00
+Development budget: 5000.00
+Operations budget: 2000.00
