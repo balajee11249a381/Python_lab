@@ -1,0 +1,14 @@
+Program:  
+6.Program to compute GCD of three numbers 
+import math  
+e1,e2,e3 = input("Enter 3 Numbers = ").split(',')  
+e1 = int(e1)  
+e2 = int(e2)  
+e3 = int(e3)  
+result = math.gcd(e1,e2,e3)  
+print(f"GCD of {e1},{e2},{e3} = {result}")  
+
+
+Output:  
+Enter 3 Numbers = 10,20,30  
+GCD of 10,20,30 = 10 
