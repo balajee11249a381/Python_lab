@@ -1,0 +1,54 @@
+count = 0
+
+while count < 5:
+    print('1) Create a new file')
+    print('2) Display the file')
+    print('3) Add a new item to the file')
+
+    try:
+        selection_input = int(input('Make a selection 1, 2 or 3: '))
+    except ValueError:
+        print("Invalid input! Please enter only numbers 1, 2, or 3.\n")
+        continue
+
+    if selection_input == 1:
+        file = open('Subject.txt', 'w')
+        subject_name = input('Enter school subject name: ')
+        file.write(subject_name + '\n')
+        file.close()
+        print("✔ New file created and subject saved.\n")
+
+    elif selection_input == 2:
+        try:
+            file = open('Subject.txt', 'r')
+            print("\nContents of Subject.txt:")
+            print(file.read())
+            file.close()
+        except FileNotFoundError:
+            print(" No file found! Please create the file first using option 1.\n")
+
+    elif selection_input == 3:
+        try:
+            file = open('Subject.txt', 'a')
+            subject_name = input('Enter school subject name to add into file: ')
+            file.write(subject_name + '\n')
+            file.close()
+
+            file = open('Subject.txt', 'r')
+            print("\nUpdated file contents:")
+            print(file.read())
+            file.close()
+        except FileNotFoundError:
+            print(" No file found! Please create the file first using option 1.\n")
+
+    else:
+        print(" Error: You must enter 1, 2 or 3.\n")
+
+    count += 1
+OUTPUT:
+1) Create a new file
+2) Display the file
+3) Add a new item to the file
+Make a selection 1, 2 or 3: 2
+ Contents of Subject.txt:
+Maths
