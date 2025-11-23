@@ -1,0 +1,29 @@
+
+Program 
+
+n = int(input("Number of letters: "))
+letters = []
+
+for i in range(n):
+    ch = input(f"Letter {i+1}: ").lower()  # convert to lowercase
+    letters.append(ch)
+
+# Define vowels
+vowels = "aeiou"
+
+# Count vowels
+count = 0
+for ch in letters:
+    if ch in vowels:
+        count += 1
+
+
+print("Number of vowels in the puzzle:", count)
+
+OUTPUT:
+Number of letters: 5
+Letter 1: a
+Letter 2: e
+Letter 3: y
+Letter 4: i
+Letter 5: o
