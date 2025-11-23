@@ -1,0 +1,23 @@
+import os
+
+# Directory path
+dir_path = "/home/Employees"
+file_path = "/home/Employees/ITEmployees.py"
+
+# Ensure directory exists
+os.makedirs(dir_path, exist_ok=True)
+
+# Content to write into ITEmployees.py
+content = """def getITNames():
+    List = ["John", "David", "Nick", "Martin"]
+    return List
+"""
+
+# Create and write to the file
+with open(file_path, "w") as f:
+    f.write(content)
+
+print("File created at:", file_path)
+
+OUTPUT:
+File created at: /home/Employees/ITEmployees.py
