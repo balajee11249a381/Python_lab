@@ -1,0 +1,143 @@
+from prettytable import PrettyTable
+import random
+import string
+import sys
+
+animal_dic = {}
+
+print('\nAnimal register program:'
+      '\n1: Enter A or a to add new animal.'
+      '\n2: Enter D or d to delete an animal.'
+      '\n3: Enter U or u to update animal.'
+      '\n4: Enter L or l to check list of animals.'
+      '\n5: Enter E or e to exit the program.')
+
+# ---------------------- Functions ----------------------
+
+def print_register():
+    if not animal_dic:
+        print("\nNo animals registered yet!")
+        return
+
+    x = PrettyTable(["ID", "Scientific Name", "Common Name"])
+    for animal_id in animal_dic:
+        x.add_row([animal_id,
+                   animal_dic[animal_id]["scientific_name"],
+                   animal_dic[animal_id]["common_name"]])
+
+    print(x.get_string(title="Animal Register"))
+
+def random_id():
+    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=4))
+
+def add_animal():
+    animal_id = random_id()
+    scientific_name = input("\nPlease enter the scientific name: ").title()
+    common_name = input("\nPlease enter the common name: ").title()
+
+    if not scientific_name or not common_name:
+        print("You must write something!")
+        return
+
+    animal_dic[animal_id] = {
+        'scientific_name': scientific_name,
+        'common_name': common_name
+    }
+
+    print(f"Animal added with ID: {animal_id}")
+
+def delete_animal():
+    animal_id = input("\nEnter the animal ID you want to delete: ").upper()
+    try:
+        if animal_id in animal_dic:
+            choice = input("Delete (y/n): ").lower()
+            if choice in ("y", "yes"):
+                del animal_dic[animal_id]
+                print(f"{animal_id} register has been deleted!")
+            else:
+                print("Deletion cancelled.")
+        else:
+            print("ID not found. Check list using 'L'")
+    except Exception:
+        print("Something bad happened.")
+
+def update_animal():
+    animal_id = input("\nEnter the animal ID you want to update: ").upper()
+    try:
+        if animal_id in animal_dic:
+            choice = input(f"Update register {animal_id}? (y/n): ").lower()
+            if choice in ("y", "yes"):
+                scientific_name = input("Write a new scientific name: ").title()
+                common_name = input("Write a new common name: ").title()
+
+                animal_dic[animal_id]['scientific_name'] = scientific_name
+                animal_dic[animal_id]['common_name'] = common_name
+
+                print("Register updated!")
+                print_register()
+            else:
+                print("Update cancelled.")
+        else:
+            print("ID not found. Check list using 'L'")
+    except Exception:
+        print("Something bad happened.")
+
+def exit_program():
+    sys.exit("Goodbye!")
+
+
+# ---------------------- User Menu Loop ----------------------
+
+while True:
+    user_input = input("\nWhat do you want to do? (a, d, u, l, e): ").lower()
+
+    if user_input == "a":
+        add_animal()
+    elif user_input == "d":
+        delete_animal()
+    elif user_input == "u":
+        update_animal()
+    elif user_input == "l":
+        print_register()
+    elif user_input == "e":
+        exit_program()
+    else:
+        print("Invalid option, try again!")
+
+
+    print(f"Animal added with ID: {animal_id}")
+
+# Run this file alone
+if __name__ == "__main__":
+    add_animal()
+    print(animal_dic)
+
+OUTPUT:
+Enter scientific name: Panthera Leo
+Enter common name: Lion
+Animal added with ID: A4F9
+{'A4F9': {'scientific_name': 'Panthera Leo', 'common_name': 'Lion'}}
+
+Animal register program:
+1: Enter A or a to add new animal.
+2: Enter D or d to delete an animal.
+3: Enter U or u to update animal.
+4: Enter L or l to check list of animals.
+5: Enter E or e to exit the program.
+
+What do you want to do? (a, d, u, l, e): a
+
+Please enter the scientific name: Panthera Leo
+Please enter the common name: Lion
+Animal added with ID: A4F9
+
+What do you want to do? (a, d, u, l, e): l
++------------------ Animal Register ------------------+
+|  ID  | Scientific Name | Common Name |
++------+------------------+-------------+
+| A4F9 |   Panthera Leo   |    Lion     |
++------+------------------+-------------+
+
+What do you want to do? (a, d, u, l, e): e
+Goodbye!
+
