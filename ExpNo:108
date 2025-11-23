@@ -1,0 +1,14 @@
+def main():
+    obj1 = open("Demo1.txt", "w")  # Opens file in write mode
+    obj1.write("Hello, How are You?\n")
+    obj1.write("Welcome to The chapter File Handling.\n")
+    obj1.write("Enjoy the session.\n")
+    obj1.close()
+
+main()   # Call main function
+
+Output:
+
+Hello, How are You?
+Welcome to The chapter File Handling.
+Enjoy the session.
