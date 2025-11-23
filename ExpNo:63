@@ -1,0 +1,13 @@
+Program
+num =int(input(“Please Enter the number: “)) 
+x=num 
+rev=0 
+while num>0: 
+rem=num % 10 
+num=num // 10 
+rev=rev*10+rem 
+print(“Reverse of a entered number “,x,” is = “,rev) 
+
+Output 
+Please Enter the number: 8759 
+Reverse of a entered number 8759 is = 9578
