@@ -1,0 +1,11 @@
+PROGRAM
+
+stars = [20, 35, 25, 40]
+total_stars = sum(stars)
+
+print("Total stars counted:", total_stars)
+
+OUTPUT:
+
+Total stars counted: 120
+
