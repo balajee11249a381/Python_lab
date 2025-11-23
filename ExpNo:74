@@ -1,0 +1,17 @@
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+# Method 1: Using for loop
+newlist1 = []
+for x in fruits:
+    if "a" in x:
+        newlist1.append(x)
+print("Output using for loop:", newlist1)
+
+# Method 2: Using list comprehension
+newlist2 = [x for x in fruits if "a" in x]
+print("Output using list comprehension:", newlist2)
+
+OUTPUT:
+Output using for loop: ['apple', 'banana', 'mango']
+Output using list comprehension: ['apple', 'banana', 'mango']
+
