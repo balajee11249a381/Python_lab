@@ -1,0 +1,31 @@
+Program:  
+list1 = [1,2,3,4,5]  
+print("Priting List 1")  
+print("--------------")  
+for i in range(0,5):  
+print(f"Element present at index {i} = {list1[i]}") 
+print()  
+list1 = 
+["SaiTeja","Charan","Achyuth","Anirudh","Puneeth"] 
+print("Priting List 2")  
+print("--------------")  
+for i in range(0,5):  
+print(f"Element present at index {i} = {list1[i]}")  
+list1 = ["Sai",1,2.3,"Saiteja",2*3]  
+print("Priting List 3")  
+print("--------------")  
+for i in range(0,5):  
+print(f"Element present at index {i} = {list1[i]}") 
+
+
+Output:  
+Printing List 1  --------------  
+Element present at index 0 = 1  
+Element present at index 1 = 2  
+Element present at index 2 = 3 
+Element present at index 3 = 4  
+Element present at index 4 = 5  
+Printing List 2  --------------  
+Element present at index 0 = SaiTeja  
+Element present at index 1 = Charan  
+Element present at index 2 = Achyuth  
