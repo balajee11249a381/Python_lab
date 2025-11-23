@@ -1,0 +1,22 @@
+PROGRAM:
+
+First_Number = 0 
+Second_Number = 1 
+Fibonacii Series = 0 1 1 2 3 5 8 13 21 34 55 
+First_Number=int(input(“Please enter First Number:”)) 
+Second_Number=int(input(“Please enter First Number:”)) 
+Limit=int(input(“ Number of Fibonacci Numbers to be Print: “)) 
+print(First_Number,end=” “) 
+print(Second_Number,end=” “) 
+for i in range(Limit+1): 
+sum=First_Number+Second_Number 
+First_Number=Second_Number 
+Second_Number=sum 
+print(sum,end=” “) 
+
+
+Output 
+Please enter First Number:0 
+Please enter First Number:1 
+Number of Fibonacci Numbers to be Print: 8 
+0 1 1 2 3 5 8 13 21 34 55
