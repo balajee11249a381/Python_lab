@@ -1,0 +1,9 @@
+Program: 
+first_name = input(“Enter your first name: “) 
+surname = input(“Enter your surname: “) 
+print(“Hello”, first_name, surname) 
+8 
+Output: 
+Enter your first name:Balajee
+Enter your surname: Thrayambaha
+Hello Balajee Thrayambaha
