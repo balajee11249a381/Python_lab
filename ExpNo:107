@@ -1,0 +1,25 @@
+try: 
+n = 0 
+res = 100 / n 
+except ZeroDivisionError: 
+print("You can't divide by zero!") 
+try : 
+n = int(input('enter value ')) 
+except ValueError: 
+print("Enter  only  numbers except 0 !") 
+n = int(input('enter value ')) 
+res = 100 / n 
+print(res) 
+else: 
+print("Result is", res) 
+finally: 
+print("Execution complete.") 
+
+
+output :   
+You can't divide by zero! 
+enter value a 
+Enter  only  numbers except 0 ! 
+enter value 7 
+14.285714285714286 
+Execution complete. 
