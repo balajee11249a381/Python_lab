@@ -1,0 +1,12 @@
+program:
+followers = 500
+followers_per_person = 200
+engagement = 0.10
+
+total_reach = followers * followers_per_person * engagement
+
+print("Total Estimated Reach =", int(total_reach))
+
+output:
+Total Estimated Reach = 10000
+
