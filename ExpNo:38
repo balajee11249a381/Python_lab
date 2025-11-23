@@ -1,0 +1,12 @@
+PROGRAM:
+
+grams = int(input("Enter weight in grams: "))
+
+kg = grams // 1000
+g = grams % 1000
+
+print(kg, "kg and", g, "g")
+
+OUTPUT:
+Enter weight in grams: 2560
+2 kg and 560 g
