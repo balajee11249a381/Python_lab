@@ -1,0 +1,58 @@
+PROGRAM
+
+n = 10 
+try: 
+res = n / 0 
+except ZeroDivisionError: 
+print("Can't be divided by zero!")
+
+OUTPUT:
+
+Can't be divided by zero!
+
+PROGRAM
+
+try : 
+print("Hello world"   
+except SyntaxError: 
+print(“Verify the line try section properly closed or not ”)
+
+OUTPUT:
+
+Verify the line: try section properly closed or not
+
+
+ PROGRAM:
+
+ try: 
+x = int("str")  # This will cause ValueError 
+inv = 1 / x  # Inverse calculation 
+except ValueError: 
+print("Not Valid! Give only integer input") 
+except ZeroDivisionError: 
+print("Zero has no inverse!")
+
+OUTPUT:
+
+Not Valid! Give only integer input
+
+PROGRAM:
+
+try: 
+n = 0 
+res = 100 / n 
+except ZeroDivisionError: 
+print("You can't divide by zero!") 
+n = int(input('enter value '))#GIVE INPUT AS a then check the program  
+res = 100 / n 
+print(res) 
+except ValueError: 
+print("Enter a valid number!") 
+else: 
+print("Result is", res) 
+finally: 
+print("Execution complete.") 
+
+OUTPUT:
+incorrect indentation, incorrect try–except structure
+
