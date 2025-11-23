@@ -1,0 +1,24 @@
+
+file_object = open("my_data.txt", "w")
+
+print("Enter lines to write to the file. Type 'exit' to stop.")
+
+while True:
+    line = input("Enter line: ")
+
+    if line.lower() == 'exit':
+        break
+
+    file_object.write(line + "\n")   # Writes text + newline
+
+file_object.close()
+
+print("Data written to 'my_data.txt' successfully.")
+
+
+OUTPUT:
+Enter lines to write to the file. Type 'exit' to stop.
+Enter line: Hello
+Enter line: This is Python file handling
+Enter line: exit
+Data written to 'my_data.txt' successfully.
