@@ -1,0 +1,15 @@
+PROGRAM:
+
+h = float(input("Enter height (h): "))
+a = float(input("Enter side a: "))
+b = float(input("Enter side b: "))
+
+A = 0.5 * h * (a + b)
+print("Area A =", A)
+
+OUTPUT:
+Enter height (h): 10
+Enter side a: 5
+Enter side b: 7
+Area A = 60.0
+
