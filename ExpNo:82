@@ -1,0 +1,65 @@
+PROGRAM:
+fp = open(“ReadDemo1.txt”,”r”) 
+text = fp.read() 
+print(text) 
+
+Output:
+
+Python programming 
+Language  
+Welcome to  
+programming language
+
+
+PROGRAM:
+fp = open(“ReadDemo1.txt”,”r”) 
+for line in fp: 
+print(line) 
+
+
+Output :  
+Python programming 
+Language  
+Welcome to  
+programming language
+
+
+fp1 = open(“numbers.txt”,”r”) 
+num = int(fp1.readline()) 
+print(num) 
+sum = 0 
+print(‘The ‘, num ,’ numbers present in the file are as follows:’) 
+for i in range(num): 
+num1 = int(fp1.readline()) 
+print(num1) 
+sum = sum + num1 
+print(‘Sum of all the numbers (except first):’) 
+print(sum) 
+
+Output 
+5 
+
+ PROGRAM:
+f = open("new.txt", "w") 
+while True: 
+st = input("Enter next line:") 
+if st == "END": 
+break 
+f.write(st + '\n') 
+f.close() 
+f = open("new.txt", "r") 
+while True: 
+st = f.readline() 
+if not st: 
+break 
+if st[0].isupper(): 
+print(st) 
+f.close()
+
+Output 
+Enter next line:Hello world 
+Enter next line:welcome to      
+Enter next line:Python programming 
+Enter next line:END 
+Hello world 
+Python programming
