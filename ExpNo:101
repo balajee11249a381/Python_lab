@@ -1,0 +1,21 @@
+import os
+
+# Create Employees directory
+os.makedirs("/home/Employees", exist_ok=True)
+
+# Create __init__.py to make it a package
+content = """from ITEmployees import getITNames
+from BPOEmployees import getBPONames
+
+def getNames():
+    return getITNames() + getBPONames()
+"""
+
+with open("/home/Employees/__init__.py", "w") as f:
+    f.write(content)
+
+print("__init__.py created — Employees is now a package.")
+
+OUTPUT:
+__init__.py created — Employees is now a package.
+
