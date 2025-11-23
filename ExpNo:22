@@ -1,0 +1,23 @@
+Program: 
+
+import sys 
+correct_pin = "1234" 
+balance = 5000 
+pin = input("Enter your ATM PIN: ") 
+if pin != correct_pin: 
+print("Invalid PIN. Exiting...") 
+sys.exit() 
+withdraw = float(input("Enter amount to withdraw: ")) 
+if withdraw <= 0: 
+print("Invalid amount!") 
+elif withdraw > balance: 
+print("Insufficient balance!") 
+else: 
+balance -= withdraw 
+print("Withdrawal successful. Remaining balance:", balance) 
+
+
+Output: 
+Enter your ATM PIN: 1234 
+Enter amount to withdraw: 1500 
+Withdrawal successful. Remaining balance: 3500.0
