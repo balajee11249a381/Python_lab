@@ -1,0 +1,11 @@
+PROGRAM:
+import math
+
+radius = float(input("Enter the radius: "))
+area = math.pi * radius * radius
+
+print(f"Area of circle = {area}")
+
+OUTPUT:
+Enter the radius: 5
+Area of circle = 78.53981633974483
