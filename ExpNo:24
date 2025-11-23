@@ -1,0 +1,12 @@
+PROGRAM:
+
+large = int(input("Enter a number over 100: "))
+small = int(input("Enter a number under 10: "))
+
+times = large // small
+print(f"{small} goes into {large} a total of {times} times.")
+
+OUTPUT:
+Enter a number over 100: 150
+Enter a number under 10: 5
+5 goes into 150 a total of 30 times.
