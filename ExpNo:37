@@ -1,7 +1,7 @@
 PROGRAM:
  
 cost = 5000
-cgst = cost * 0.09
+cgst = cost * 0.09 
 sgst = cost * 0.09
 total = cost + cgst + sgst
 
