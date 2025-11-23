@@ -1,0 +1,17 @@
+Program:  
+fname = "Thrayambaha"  
+lname = "Balajee R.Y"
+print("String Concatenation :”,fname+lname)  
+print("fname * 4 :”,fname*4)  
+print("t is present in fname : “,'t' in fname)  
+print("T is present in fname : “,'T' in fname}")  
+print("Slicing of fname :”,  fname[2:7])  
+print("t is not present in lname: ”, 't' not in lname)  
+
+Output:  
+String Concatenation : Thrayambaha Balajee R.Y  
+Thrayambaha * 4 : Thrayambaha Thrayambaha Thrayambaha Thrayambaha
+t is present in Thrayambaha: False  
+T is present in Thrayambaha : True  
+Slicing of Thrayambaha : rayam  
+s is not present in Balajee R.Y : True 
