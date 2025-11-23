@@ -1,0 +1,17 @@
+PROGRAM:
+
+cost = 5000
+cgst = cost * 0.09
+sgst = cost * 0.09
+total = cost + cgst + sgst
+
+print("Cost of Production:", cost)
+print("CGST @9%:", cgst)
+print("SGST @9%:", sgst)
+print("Total Cost:", total)
+
+OUTPUT:
+Cost of Production: 5000
+CGST @9%: 450.0
+SGST @9%: 450.0
+Total Cost: 5900.0
