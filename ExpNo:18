@@ -1,0 +1,7 @@
+Program: 
+first_name = input(“Enter your first name: “) 
+print(“Hello”+ first_name  ) 
+
+Output: 
+Enter your first name: Thrambaha
+Hello Thrayambaha
