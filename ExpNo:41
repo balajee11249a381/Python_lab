@@ -1,0 +1,26 @@
+PROGRAM:
+value = input("Enter something: ")
+
+if value.isdigit():
+    num = int(value)
+    print("It is a number")
+
+    if num > 0:
+        print("Positive")
+        if num % 2 == 0:
+            print("Even")
+        else:
+            print("Odd")
+    else:
+        print("Negative")
+
+else:
+    print("Not a number, data type =", type(value))
+
+
+OUTPUT:
+
+Enter something: 14
+It is a number
+Positive
+Even
