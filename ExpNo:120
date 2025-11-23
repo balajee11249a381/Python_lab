@@ -1,0 +1,18 @@
+import shelve
+
+# Delete key
+with shelve.open('my_data.db', 'w') as shelf:
+    del shelf['is_student']
+    print("'is_student' variable deleted.")
+
+# Verify deletion
+try:
+    with shelve.open('my_data.db', 'r') as shelf:
+        print("Is Student:", shelf['is_student'])
+except KeyError:
+    print("'is_student' variable not found after deletion.")
+
+OUTPUT:
+
+'is_student' variable deleted.
+'is_student' variable not found after deletion.
