@@ -1,0 +1,23 @@
+f = open("new.txt", "w") 
+while True: 
+st = input("Enter next line:") 
+if st == "END": 
+break 
+f.write(st + '\n') 
+f.close() 
+f = open("new.txt", "r") 
+while True: 
+st = f.readline() 
+if not st: 
+break 
+if st[0].isupper(): 
+print(st) 
+f.close() 
+
+Output 
+Enter next line:Hello world 
+Enter next line:welcome to      
+Enter next line:Python programming 
+Enter next line:END 
+Hello world 
+Python programming
