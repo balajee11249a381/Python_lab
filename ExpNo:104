@@ -1,0 +1,23 @@
+ 
+def divide_num(num_list): 
+  for num in num_list: 
+    print(10/num) 
+ 
+num_list = [5, 6, 0, 7] 
+divide_num(num_list) 
+ 
+ 
+Output :  
+2.0 
+1.6666666666666667 
+Traceback (most recent call last): 
+ 
+  File 
+"F:/NETJS/NetJS_2017/Python/Test/Test
+ .py", line 6, in <module> 
+    divide_num(num_list) 
+  File 
+"F:/NETJS/NetJS_2017/Python/Test/Test
+ .py", line 3, in divide_num 
+    print(10/num) 
+ZeroDivisionError: division by zero
