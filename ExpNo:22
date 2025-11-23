@@ -1,0 +1,16 @@
+PROGRAM 
+
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+c = float(input("Enter third number: "))
+
+result = (a + b) * c
+print(f"The answer is {result}")
+
+
+OUTPUT:
+
+Enter first number: 2
+Enter second number: 3
+Enter third number: 4
+The answer is 20.0
