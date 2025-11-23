@@ -1,0 +1,16 @@
+fp1 = open(“numbers.txt”,”r”) 
+num = int(fp1.readline()) 
+print(num) 
+sum = 0 
+print(‘The ‘, num ,’ numbers present in the file are as follows:’) 
+for i in range(num): 
+num1 = int(fp1.readline()) 
+print(num1) 
+sum = sum + num1 
+print(‘Sum of all the numbers (except first):’) 
+print(sum) 
+Output 
+5 
+The 5 numbers present in the file are as follows: 
+2 
+4
