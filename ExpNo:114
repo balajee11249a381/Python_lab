@@ -1,0 +1,17 @@
+
+fp1 = open("numbers.txt", "r")     
+
+num = fp1.read()                   
+print(num)                        
+
+print(type(num))                   
+fp1.close()
+
+OUTPUT:
+
+5
+2
+4
+6
+8
+10
