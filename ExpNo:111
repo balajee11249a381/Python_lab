@@ -1,0 +1,13 @@
+from random import randint
+
+fp1 = open("WriteNumRandom.txt", "w")  # Write mode
+
+for _ in range(50):                     # 50 random numbers
+    x = randint(500, 1000)             # Generate random number
+    fp1.write(str(x) + " ")            # Convert to string & write
+
+fp1.close()
+
+OUTPUT:
+
+712 643 998 501 886 590 920 731 600 845 ...
