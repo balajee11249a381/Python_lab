@@ -1,0 +1,8 @@
+PROGRAM:
+c = float(input("Enter temperature in Celsius: "))
+f = (c * 9/5) + 32
+print(f"{c}°C = {f}°F")
+
+OUTPUT:
+Enter temperature in Celsius: 30
+30.0°C = 86.0°F
