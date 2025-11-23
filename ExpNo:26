@@ -1,0 +1,12 @@
+PROGRAM:
+start = int(input("How many slices did you start with? "))
+eaten = int(input("How many slices have you eaten? "))
+
+left = start - eaten
+print(f"You have {left} slices left.")
+
+OUTPUT:
+
+How many slices did you start with? 8
+How many slices have you eaten? 3
+You have 5 slices left.
