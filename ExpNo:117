@@ -1,0 +1,13 @@
+import shelve
+
+with shelve.open('my_data.db', 'r') as shelf:
+    print("Retrieved Name:", shelf['name'])
+    print("Retrieved Age:", shelf['age'])
+    print("Retrieved Favorite Numbers:", shelf['favorite_numbers'])
+    print("Retrieved Student Status:", shelf['is_student'])
+
+OUTPUT:
+Retrieved Name: Alice
+Retrieved Age: 30
+Retrieved Favorite Numbers: [7, 13, 42]
+Retrieved Student Status: False
