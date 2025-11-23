@@ -1,0 +1,26 @@
+PROGRAM:
+from collections import Counter
+
+value = input("Enter a value: ")
+
+# Palindrome check
+if value == value[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+# Frequency count
+counted_dict = Counter(value)
+
+for key in sorted(counted_dict.keys()):
+    print(f'{key} appears {counted_dict[key]} times')
+
+OUTPUT:
+Enter a value: malayalam
+Palindrome
+a appears 4 times
+l appears 2 times
+m appears 2 times
+y appears 1 time
+
+
