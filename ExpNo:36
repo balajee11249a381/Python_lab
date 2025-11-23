@@ -1,0 +1,10 @@
+PROGRAM:
+
+num1 = '10'
+num2 = 20.65
+sum = num1 + num2
+print(sum)
+
+OUTPUT:
+
+TypeError: can only concatenate str (not "float") to str
