@@ -1,0 +1,23 @@
+import os
+
+# Directory path
+dir_path = "/home/Employees"
+init_file = "/home/Employees/__init__.py"
+
+# Make sure directory exists
+os.makedirs(dir_path, exist_ok=True)
+
+# Content of __init__.py
+content = """from ITEmployees import getITNames
+from BPOEmployees import getBPONames
+"""
+
+# Create and write to __init__.py
+with open(init_file, "w") as f:
+    f.write(content)
+
+print("__init__.py file created at:", init_file)
+
+OUTPUT:
+
+__init__.py file created at: /home/Employees/__init__.py
