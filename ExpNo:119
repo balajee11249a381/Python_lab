@@ -1,0 +1,7 @@
+import shelve
+
+with shelve.open('my_data.db', 'w') as shelf:
+    shelf['age'] = 31
+    print("Age updated to 31.")
+OUTPUT:
+Age updated to 31.
